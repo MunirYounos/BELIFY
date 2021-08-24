@@ -4117,45 +4117,5 @@
         "default": "Your wishlist is currently empty."
       }
     ]
-  },
-  {
-    "name": "Translation Lab",
-    "settings": [
-      {
-        "type": "header",
-        "content": "Language Switcher"
-      },
-      {
-        "type": "checkbox",
-        "id": "language_switcher_enabled",
-        "label": "Enable language switcher",
-        "default": true
-      },
-      {
-        "type": "checkbox",
-        "id": "language_switcher_flags",
-        "label": "Show flags",
-        "default": true
-      },
-      {
-        "type": "header",
-        "content": "Labels"
-      },
-      {
-        "type": "select",
-        "id": "language_switcher_label",
-        "options": [
-          {
-            "value": "language-name",
-            "label": "Language name"
-          },
-          {
-            "value": "language-code",
-            "label": "Language code"
-          }
-        ],
-        "default": "language-name"
-      }
-    ]
   }
 ]
