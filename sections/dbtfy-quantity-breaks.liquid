@@ -42,7 +42,7 @@
                  value="{{ amount }}"
                  data-discount-code="{{ discount_code }}"
                  data-discount-type="{{ discount_type }}"
-                 data-discount-amount="{{ discount_amount }}">
+                 data-discount-amount="{{ discount_amount | floor }}">
 
           <label for="Quantity-{{ block.id }}">
             {{- single_break_text -}}
@@ -52,7 +52,6 @@
     {%- endfor -%}
   </div>
 {%- endif -%}
-
 
 {%- schema -%}
   {

@@ -1402,7 +1402,7 @@ $class-type: unquote(".");
 
 // Button small
 @mixin buttonSmall {
-  padding: ($paddingButtonSmallX + 4) ($paddingButtonSmallX * 2);
+  padding: ($paddingButtonSmallX ) ($paddingButtonSmallX * 1.8);
 }
 
 // Button xsmall
@@ -1679,7 +1679,7 @@ $class-type: unquote(".");
 
   > * {
     display: inline-block;
-    margin-right: $spacer-sm;
+    margin-right: ($spacer-sm - 4 );
     margin-bottom: $spacer-sm;
     vertical-align: middle;
   }
@@ -1966,7 +1966,7 @@ $class-type: unquote(".");
   &::after{
     position: absolute;
     content: '';
-    width: 68px;
+    width: 60px;
     top: 50%;
     left: 50%;
     height: 1px;
@@ -6622,7 +6622,7 @@ cite {
   label {
     @include buttonBase;
     @include buttonSmall;
-    min-width: $heightInputSmall;
+    min-width: ($heightInputSmall - 3);
 
     &.disabled {
       .lt-ie9 & {
@@ -9460,3 +9460,99 @@ right: 15px !important;
 selector[data-type="languages"][data-id="283692853"].ls-sw-closed > .active:after, .ls-sw-languages-283692853.ls-sw-closed > .active:after{
   transform: rotate(135deg)!important;
 }
+
+// .dbtfy.dbtfy-quantity_breaks {
+//   .radio {
+//     .qb-original-price {
+//       display: none;
+//     }
+//     .badge {
+//       display: none;
+//     }
+
+
+
+
+//   }
+
+//   .radio:nth-of-type(1)::after{
+//     content: 'save 20%';
+//     color: white;
+//     background-color:  $anodyne-secondary-clr;
+//     padding: 2px 4px;
+
+//   }
+//   .radio:nth-of-type(2)::after{
+//     content: 'save 30%';
+//     color: white;
+//     background-color:  $anodyne-secondary-clr;
+//     padding: 2px 4px;
+//   }
+//   .radio:nth-of-type(3)::after{
+//     content: 'save 40%';
+//     color: white;
+//     background-color:  $anodyne-secondary-clr;
+//     padding: 2px 4px;
+//   }
+
+//   .radio:nth-of-type(1){
+//     .qb-price {
+//       .qb-discounted-price {
+//         .money{
+//           display: inline-block;
+//           visibility:hidden;
+//           &::after{
+//             content: '€89';
+//             color: #444;
+//             font-size:1.1rem;
+//             margin-left: -62px;
+//             margin-right: 12px;
+//             visibility:visible;
+//           }
+//         }
+
+//       }
+//     }
+//   }
+
+//   .radio:nth-of-type(2){
+//     .qb-price {
+//       .qb-discounted-price {
+//         .money{
+//           display: inline-block;
+//           visibility:hidden;
+//           &::after{
+//             content: '€79';
+//             color: #444;
+//             font-size:1.1rem;
+//             margin-left: -66px;
+//             margin-right: 12px;
+//             visibility:visible;
+//           }
+//         }
+
+//       }
+//     }
+//   }
+
+//   .radio:nth-of-type(3){
+//     .qb-price {
+//       .qb-discounted-price {
+//         .money{
+//           display: inline-block;
+//           visibility:hidden;
+//           &::after{
+//             content: '€69';
+//             color: #444;
+//             font-size:1.1rem;
+//             margin-left: -68px;
+//             margin-right: 12px;
+//             visibility:visible;
+//           }
+//         }
+
+//       }
+//     }
+//   }
+
+// }
